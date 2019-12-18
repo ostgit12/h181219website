@@ -1,0 +1,536 @@
+@import url('https://fonts.googleapis.com/css?family=Alatsi|Bebas+Neue&display=swap');
+
+:root{
+    font-family: 'Alatsi', sans-serif;
+    --main-color: black;
+    scroll-behavior: smooth;
+}
+
+body{
+    max-width: 980px;
+    margin: auto;
+    border: 1px solid red;
+}
+
+body h1{
+    font-size: 2rem;
+    font-family: 'Bebas Neue', cursive;
+}
+
+body h3{
+    font-size: 1rem;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.header{
+    border: 5px solid darkgreen;
+    /height: 300px;
+}
+
+.header .searchBar{
+    padding: 5px;
+}
+
+
+/*Banners*/
+main .shopbanner{
+    background-image: url(../img/502%25shopbanner.png);
+    /background-position: top;
+    background-size: cover;
+    min-height: 750px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /border: 5px solid lightgreen;
+}
+
+main .discountbanner{
+    background-image: url(../img/1discountbanner.png);
+    background-position: center;
+    background-size: cover;
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /padding: 50px;
+    /padding-bottom: 20px;
+    /padding-left: 100px;
+    border: 5px solid #7ca8b9;
+}
+
+
+/*ProductList*/
+/*
+main .product-list .product-card{
+
+    border: 3px solid red;
+}
+*/
+
+/*top product list*/
+main .topproduct-list .product-card img{
+    width: 150px;
+    /height: 100%;
+    display: block;
+    /border: 3px solid black;
+}
+
+main .topproduct-list .product-card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+     background-color: #96c5d7;
+    /border: 3px solid red;
+}
+
+main .topproduct-list{
+    
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 0px;
+    /border: 3px solid blue;
+}
+
+main .topproduct-list .product-card:hover{
+    border: 1px solid black;
+    background-color: #c8e0ec;/#7daabb;
+    transition: none 0.3s;
+    cursor: pointer;
+}
+
+
+
+/*bottom product list*/
+main .bottomproduct-list .product-card img{
+    width: 150px;
+    /height: 100%;
+    display: block;
+    /border: 3px solid black;
+}
+
+main .bottomproduct-list .product-card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+     background-color: #96c5d7;
+    /border: 3px solid red;
+}
+
+main .bottomproduct-list{
+    
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 0px;
+    /border: 3px solid blue;
+}
+
+main .bottomproduct-list .product-card:hover{
+    border: 1px solid black;
+    background-color: #c8e0ec;/#bedae6;/#c8e0ec;/#7daabb;
+    transition: none 0.3s;
+    cursor: pointer;
+}
+
+
+
+/*
+.product-card {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    border: 1px solid black;
+    background-color: #96c5d7; 
+}
+*/
+
+/*
+
+main .product-list .product-card:hover{
+    border: 2px solid black;
+    background-color: #7daabb;
+    transition: none 0.3s;
+    cursor: pointer;
+}
+*/
+
+
+/*FooterSubscribe*/
+footer .subscribe{
+    display: flex;
+    justify-content: center;
+}
+
+footer .imgsubscribe img{
+    width: 50%;
+    float: right;
+}
+
+footer .textsubscribe{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+/*HeadMenu*/
+
+.header .headmenu{
+    display:flex;
+    justify-content: space-between;
+   / flex-wrap: wrap;
+    background-color: lightgreen;
+   / background-color: #fff;
+    position: relative;/absolute;
+    /z-index:4;
+    /width: 100%;
+    height: 70px;
+    /top: 50;
+    /left: 130;
+    border: 3px solid blue;
+}
+
+
+.header .headmenu img{
+    border: 3px solid red;
+}
+
+.header .headmenu .logo{
+    /padding-left: 10px;
+}
+
+.header .headmenu .checkout{
+    padding-right: 15px;
+}
+
+.header .headmenu .links-search{
+    border: 3px solid yellow;
+}
+
+.header .headmenu .linksmenu{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;/5px;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
+   / border: 3px solid blue;
+}
+
+.header .headmenu .linksmenu a{
+    display: block;
+    /outline: 1px solid black;
+    padding: 5px 30px 5px;
+    text-decoration: none;
+    border: 1px solid black;
+}
+
+.header .headmenu .linksmenu  a:hover{
+    background-color: #ddd;
+}
+
+/*eHeadMenu*/
+
+/*BurgerMenu*/
+/*
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    /background-color: #bbb; 
+}
+*/
+a {
+    color: #000;
+}
+
+.header .burgermenu{
+    background-color: lightblue;/#fff;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    position: relative;
+    /width: 970px;
+    z-index: 3;
+    top: 0;
+    left:0;
+    border: 3px solid violet;
+}
+
+
+.header .burgermenu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
+    /border: 3px solid blue;
+}
+
+
+.header .burgermenu ul a{
+    display: block;
+    outline: 1px solid red;
+    padding: 20px;
+    border-right: 5px solid green;
+    text-decoration: none;
+}
+
+
+.header .burgermenu ul a:hover{
+    background-color: #ddd;
+}
+
+
+
+.header .menu{
+    clear: both;
+    max-height: 0;
+    transition: max-height .3s ease-out;
+}
+
+
+
+.header .menu-icon{
+    /outline: 1px solid red;
+    margin-top: 10px;
+    padding: 28px 10px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+
+
+.header .menu-icon .nav-icon{
+    background: #333;
+    display: block;
+    height: 4px;
+    width: 20px;
+    position: relative;
+    transition: background .2s ease-out;  
+}
+
+
+.header .menu-icon .nav-icon:before{
+    background: #333;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: 8px;
+}
+
+
+.header .menu-icon .nav-icon:after{
+    background: #333;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: -8px;
+}
+
+
+.header .menu-btn{
+    display: none;
+    
+}
+
+
+.header .menu-btn:checked ~ .menu{
+    max-height: 340px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon{
+    background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before{
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after{
+    transform: rotate(45deg);
+    top: 0;
+}
+
+/*eBurgerMenu*/
+
+
+
+/*
+    .header .headmenu{
+    /display:flex;
+    /justify-content: space-between;
+    background-color: lightgreen;
+    width: 100%;
+    /height: 60px;
+    position: fixed;/absolute;
+        z-index:4;
+    /top:0;
+    border: 3px solid blue;
+    }
+*/
+
+
+/*Media*/
+/*
+@media (max-width: 980px){
+    .product-list{
+       display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 1px;
+    }
+    
+    main .shopbanner{
+    background-image: url(../img/1shopbanner.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+        
+}
+*/
+
+/*
+@media (max-width: 660px){
+    .product-list{
+       display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 1px;
+    }
+}
+*/
+
+/*
+@media (max-width: 600px){
+    .product-list{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1px;
+    }
+
+    /*
+    header nav{
+       // display: flex;
+        //align-items: center;
+    }
+    
+    header .menu{
+        flex: 1;
+    }
+   */
+/*}
+*/
+
+/*
+@media (max-width: 500px){
+    .product-list{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1px;
+    }
+    
+    main .shopbanner{
+    background-image: url(../img/1shopbanner.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+}
+*/
+
+
+/*Media*/
+
+@media (max-width: 750px){
+    
+      main .topproduct-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 5px;
+    }
+    
+    main .bottomproduct-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 5px;
+    }
+    
+    
+}
+
+
+@media (max-width: 650px){
+    
+    main .topproduct-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+    }
+    
+    main .bottomproduct-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+    }
+}
+
+
+@media (max-width: 605px){
+    
+    main .topproduct-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+    }
+    
+    main .bottomproduct-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+    }
+   
+    .header .menu-icon{
+        /display: none;
+    }
+    
+    .header .headmenu{
+    /background-color: lightgreen;
+    background-color: #fff;
+    /border: 3px solid blue;
+    position: absolute;
+    z-index:4;
+    width:87%;
+    }
+    
+    
+    .header .headmenu .linksmenu{
+        display: none;
+    }
+    
+}
+
+
+/*
+@media (min-width: 200px){
+    .product-list{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1px;
+    }
+}
+
+*/

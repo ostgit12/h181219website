@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CheckoutBasket</title>
+    <link rel="stylesheet" href="css/checkout.css">
+</head>
+<body>
+  <h1>My shopping list</h1>
+    <!--
+    <section>
+    <input type="text" class="display" value="Mickey">
+    <button class="click-me">ClickMe</button>
+    </section>
+
+    <form method="POST" action="https://formspree.io/xrgbpzdw">
+-->
+   
+    <!--     
+    <section>    
+    <input type="submit" value="Send to Email" style="align: left">
+    </section>    
+    <br><br><br><br>
+        -->
+        
+    <section>
+    <label for="item">Enter a new item:</label>
+    <input type="text" name="item" class="itemTxt">
+    
+    <button class="addItem">Add item</button>
+    <br><label for="itmRange">Itm. qty:</label>
+    0<input type="range" name="itmRange" class="rngBar" value="50">100
+        
+    <label for="itmColor">
+    &nbsp;Itm. colour
+    </label>
+    <select class="color">
+    <option value="Blue">Blue</option>
+    <option value="Green">Green</option>
+    <option value="Yellow">Yellow</option>
+    <option value="Black">Black</option>
+    </select>
+        
+    <label for="price">Itm. price:</label>
+    <input type="text" class="itemPrice" name="price" value="10"  size="1">
+    
+        
+    <label for="itmDiscount">Sale:</label>
+    <select class="discount">
+    <option value="0">0% Off</option>
+    <option value="50">50% Off</option>
+    <option value="25">25% Off</option>
+    <option value="10">10% Off</option>
+    </select>  
+
+    <ol>
+
+    </ol>
+    </section>
+   
+
+
+<script src="js/checkout.js"></script>
+</body>
+</html>
