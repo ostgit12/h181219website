@@ -8,60 +8,82 @@
     <link rel="stylesheet" href="css/checkout.css">
 </head>
 <body>
-  <h1>My shopping list</h1>
-    <!--
-    <section>
-    <input type="text" class="display" value="Mickey">
-    <button class="click-me">ClickMe</button>
-    </section>
-
-    <form method="POST" action="https://formspree.io/xrgbpzdw">
--->
-   
-    <!--     
-    <section>    
-    <input type="submit" value="Send to Email" style="align: left">
-    </section>    
-    <br><br><br><br>
-        -->
-        
-    <section>
-    <label for="item">Enter a new item:</label>
-    <input type="text" name="item" class="itemTxt">
+ <h1>Here is your Shopping List</h1>
     
-    <button class="addItem">Add item</button>
-    <br><label for="itmRange">Itm. qty:</label>
-    0<input type="range" name="itmRange" class="rngBar" value="50">100
-        
-    <label for="itmColor">
-    &nbsp;Itm. colour
-    </label>
-    <select class="color">
-    <option value="Blue">Blue</option>
-    <option value="Green">Green</option>
-    <option value="Yellow">Yellow</option>
-    <option value="Black">Black</option>
-    </select>
-        
-    <label for="price">Itm. price:</label>
-    <input type="text" class="itemPrice" name="price" value="10"  size="1">
-    
-        
-    <label for="itmDiscount">Sale:</label>
-    <select class="discount">
-    <option value="0">0% Off</option>
-    <option value="50">50% Off</option>
-    <option value="25">25% Off</option>
-    <option value="10">10% Off</option>
-    </select>  
-
     <ol>
 
     </ol>
-    </section>
+    
+<script>
+             
+        const list = document.querySelector('ol');
+        const input = document.querySelector('input');
+        const button = document.querySelector('button');
+
+        
+    if(localStorage.clickcount != 0){
+        
+        let arrList = JSON.parse(localStorage['mylist']);
+        
+        let myList = [];
+        
+        myList = arrList;
+        
+        let k=0;
+        
+        while(k<localStorage.clickcount){
+              
+        let myItem = myList[k].name +
+        " (quantity: " + myList[k].quantity +
+        ", colour: " + myList[k].color +
+        ", discount: " + myList[k].sale + "% Off" +
+        ", price: $" + myList[k].price +
+        ",  sale price: $"+
+        myList[k].salePrice
+        +")"; 
+              
+      
+            const listItem = document.createElement('li');
+            const listText = document.createElement('span');
+            const listBtn = document.createElement('button');
+
+            listItem.appendChild(listText);
+            listText.textContent = myItem;
+
+
+            listItem.appendChild(listBtn);
+            listBtn.textContent = 'Delete';
+            list.appendChild(listItem);
+            
+            listBtn.onclick = function(e) {
+            list.removeChild(listItem);
+                
+                var myList = JSON.parse(localStorage['mylist']);
+                
+                let arrList =[];
+                
+                arrList = myList;
+                
+                arrList.pop();
+                
+              localStorage['mylist'] = JSON.stringify(arrList);
+                
+                localStorage.clickcount = localStorage.clickcount -1;
+                                
+            }
+                  k++;
+            
+
+                  
+        }//end while
+        
+        }//end if(localStorage.clickcount != 0)
+  
+</script>
    
 
-
+<!--
 <script src="js/checkout.js"></script>
+-->
 </body>
 </html>
