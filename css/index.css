@@ -57,11 +57,13 @@ body h3{
 
 
 .header .headmenu .logo{
+    padding: 15px;
   
 }
 
 .header .headmenu .checkout{
     padding-right: 15px;
+    padding-top: 15px;
 }
 
 .header .headmenu .links-search{
@@ -71,7 +73,7 @@ body h3{
     display: flex;
     flex-wrap: wrap;
     margin: 0;
-    padding: 0;/5px;
+    padding: 15px;
     list-style: none;
     overflow: hidden;
     background-color: #fff;
@@ -95,7 +97,7 @@ body h3{
 /*Banners*/
 
 main .shopbanner{
-    background-image: url(../img/50%25shopbanner.jpg);
+    background-image: url(../img/1shopbanner.jpg);
     /background-position: top;
     background-size: cover;
     min-height: 650px;
